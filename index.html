@@ -75,56 +75,47 @@ main{
   right:-70px;
 }
 
-.cross{
+/* LOGO IGLESIA DE DIOS ARGENTINA */
+
+.logo{
   position:relative;
-  width:74px;
-  height:74px;
-  margin:0 auto 20px;
+  width:150px;
+  max-width:55%;
+  height:auto;
+  display:block;
+  margin:0 auto 18px;
+  filter:drop-shadow(0 0 18px rgba(255,255,255,.18));
 }
 
-.cross:before,
-.cross:after{
-  content:"";
-  position:absolute;
-  background:#fff;
-  border-radius:6px;
-  box-shadow:0 0 28px rgba(255,255,255,.3);
-}
-
-.cross:before{
-  width:16px;
-  height:74px;
-  left:29px;
-}
-
-.cross:after{
-  width:58px;
-  height:16px;
-  left:8px;
-  top:19px;
-}
-
-.kicker{
-  position:relative;
-  font-size:13px;
-  letter-spacing:3px;
-  font-weight:800;
-  color:#dbeafe;
-  margin-bottom:8px;
-}
+/* TÍTULO PRINCIPAL */
 
 .hero h1{
   position:relative;
-  font-size:clamp(30px,8vw,52px);
+  font-size:clamp(34px,9vw,58px);
   line-height:1.05;
   margin:0;
   font-weight:900;
+  letter-spacing:-1px;
 }
 
-.hero p{
+/* LEMA */
+
+.hero .slogan{
+  position:relative;
+  margin:9px 0 0;
+  font-size:clamp(17px,4.5vw,22px);
+  line-height:1.2;
+  color:#dbeafe;
+  font-weight:600;
+}
+
+/* TEXTO INFERIOR */
+
+.hero .message{
   position:relative;
   margin:12px 0 0;
-  font-size:19px;
+  font-size:16px;
+  line-height:1.4;
   color:#dbeafe;
   font-weight:600;
 }
@@ -205,6 +196,10 @@ footer{
     padding-top:34px;
   }
 
+  .logo{
+    width:135px;
+  }
+
 }
 </style>
 </head>
@@ -215,17 +210,20 @@ footer{
 
 <section class="hero">
 
-<div class="cross" aria-hidden="true"></div>
-
-<div class="kicker">
-IGLESIA DE DIOS
-</div>
+<img
+  class="logo"
+  src="https://iddargentina.org.ar/wp-content/uploads/2024/08/IDD-LOGO-VERTICAL-200x162.png"
+  alt="Iglesia de Dios Argentina">
 
 <h1>
-Elevando nuestras voces
+IGLESIA DE DIOS
 </h1>
 
-<p>
+<p class="slogan">
+Elevando nuestras voces
+</p>
+
+<p class="message">
 Un mismo mensaje, una misma fe, una misma esperanza.
 </p>
 
