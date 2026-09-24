@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111827">
+
+<title>Elevando nuestras voces | Iglesia de Dios</title>
+
+<style>
+:root{
+  --bg:#07111f;
+  --card:#101c2e;
+  --text:#f8fafc;
+  --muted:#b7c3d4;
+  --accent:#8b5cf6;
+  --accent2:#22d3ee;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:linear-gradient(160deg,#07111f 0%,#111827 55%,#172554 100%);
+  color:var(--text);
+  min-height:100vh;
+}
+
+main{
+  max-width:760px;
+  margin:auto;
+  padding:24px 18px 44px;
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  border-radius:28px;
+  padding:42px 24px 34px;
+  text-align:center;
+  background:linear-gradient(
+    145deg,
+    rgba(139,92,246,.28),
+    rgba(34,211,238,.12)
+  );
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 20px 55px rgba(0,0,0,.28);
+}
+
+.hero:before,
+.hero:after{
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  filter:blur(2px);
+  opacity:.5;
+}
+
+.hero:before{
+  width:180px;
+  height:180px;
+  background:#8b5cf6;
+  top:-110px;
+  left:-70px;
+}
+
+.hero:after{
+  width:180px;
+  height:180px;
+  background:#22d3ee;
+  bottom:-120px;
+  right:-70px;
+}
+
+.cross{
+  position:relative;
+  width:74px;
+  height:74px;
+  margin:0 auto 20px;
+}
+
+.cross:before,
+.cross:after{
+  content:"";
+  position:absolute;
+  background:#fff;
+  border-radius:6px;
+  box-shadow:0 0 28px rgba(255,255,255,.3);
+}
+
+.cross:before{
+  width:16px;
+  height:74px;
+  left:29px;
+}
+
+.cross:after{
+  width:58px;
+  height:16px;
+  left:8px;
+  top:19px;
+}
+
+.kicker{
+  position:relative;
+  font-size:13px;
+  letter-spacing:3px;
+  font-weight:800;
+  color:#dbeafe;
+  margin-bottom:8px;
+}
+
+.hero h1{
+  position:relative;
+  font-size:clamp(30px,8vw,52px);
+  line-height:1.05;
+  margin:0;
+  font-weight:900;
+}
+
+.hero p{
+  position:relative;
+  margin:12px 0 0;
+  font-size:19px;
+  color:#dbeafe;
+  font-weight:600;
+}
+
+.intro{
+  text-align:center;
+  color:var(--muted);
+  margin:26px 8px 20px;
+  font-size:16px;
+}
+
+.churches{
+  display:grid;
+  gap:14px;
+}
+
+.card{
+  background:rgba(16,28,46,.88);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:20px;
+  padding:20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.name{
+  font-weight:800;
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.address{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.4;
+}
+
+.btn{
+  display:inline-block;
+  flex:none;
+  text-decoration:none;
+  color:#fff;
+  background:linear-gradient(135deg,var(--accent),#6366f1);
+  font-weight:800;
+  padding:12px 15px;
+  border-radius:13px;
+  font-size:14px;
+  box-shadow:0 7px 20px rgba(99,102,241,.25);
+}
+
+.btn:active{
+  transform:scale(.98);
+}
+
+footer{
+  text-align:center;
+  color:#8190a6;
+  font-size:12px;
+  margin-top:28px;
+}
+
+@media(max-width:520px){
+
+  .card{
+    align-items:flex-start;
+    flex-direction:column;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .hero{
+    padding-top:34px;
+  }
+
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<section class="hero">
+
+<div class="cross" aria-hidden="true"></div>
+
+<div class="kicker">
+IGLESIA DE DIOS
+</div>
+
+<h1>
+Elevando nuestras voces
+</h1>
+
+<p>
+Un mismo mensaje, una misma fe, una misma esperanza.
+</p>
+
+</section>
+
+<p class="intro">
+Encontrá la congregación más cercana y acercate.
+</p>
+
+<section class="churches" aria-label="Congregaciones">
+
+<article class="card">
+
+<div>
+<div class="name">
+Iglesia de Dios, Puerto
+</div>
+
+<div class="address">
+San Salvador 3745
+</div>
+</div>
+
+<a
+class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20Dios%20Puerto%20San%20Salvador%203745%20Mar%20del%20Plata"
+target="_blank"
+rel="noopener">
+Cómo llegar
+</a>
+
+</article>
+
+
+<article class="card">
+
+<div>
+<div class="name">
+Iglesia de Dios, VOM
+</div>
+
+<div class="address">
+Calabria 4946
+</div>
+</div>
+
+<a
+class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20Dios%20VOM%20Calabria%204946%20Mar%20del%20Plata"
+target="_blank"
+rel="noopener">
+Cómo llegar
+</a>
+
+</article>
+
+
+<article class="card">
+
+<div>
+<div class="name">
+Iglesia de Dios, El Shaddai
+</div>
+
+<div class="address">
+Av. Jara 2980
+</div>
+</div>
+
+<a
+class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20Dios%20El%20Shaddai%20Av%20Jara%202980%20Mar%20del%20Plata"
+target="_blank"
+rel="noopener">
+Cómo llegar
+</a>
+
+</article>
+
+
+<article class="card">
+
+<div>
+<div class="name">
+Iglesia de Dios, Batán
+</div>
+
+<div class="address">
+Diagonal MDP, entre 31 y 33
+</div>
+</div>
+
+<a
+class="btn"
+href="https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20Dios%20Batan%20Diagonal%20MDP%20entre%2031%20y%2033%20Batan%20Buenos%20Aires"
+target="_blank"
+rel="noopener">
+Cómo llegar
+</a>
+
+</article>
+
+</section>
+
+<footer>
+IGLESIA DE DIOS · Elevando nuestras voces
+</footer>
+
+</main>
+
+</body>
+</html>
