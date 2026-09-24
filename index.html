@@ -17,7 +17,6 @@
   --muted:#b7c3d4;
   --accent:#8b5cf6;
   --accent2:#22d3ee;
-  --success:#22c55e;
 }
 
 *{
@@ -41,7 +40,7 @@ body{
 main{
   max-width:760px;
   margin:auto;
-  padding:18px 16px 45px;
+  padding:16px 14px 45px;
 }
 
 
@@ -53,7 +52,7 @@ main{
   position:relative;
   overflow:hidden;
   border-radius:28px;
-  padding:34px 22px 32px;
+  padding:32px 20px 30px;
   text-align:center;
 
   background:
@@ -101,15 +100,14 @@ main{
   position:relative;
   z-index:1;
 
-  width:225px;
-  max-width:76%;
+  width:220px;
+  max-width:78%;
   height:auto;
 
   display:block;
   margin:0 auto 18px;
 
-  filter:
-    drop-shadow(0 0 16px rgba(255,255,255,.20));
+  filter:drop-shadow(0 0 16px rgba(255,255,255,.20));
 
   animation:logoEntrada 1s ease .15s both;
 }
@@ -163,12 +161,13 @@ main{
 
 
 /* =========================
-   FRASE
+   BIENVENIDA
 ========================= */
 
 .welcome{
   text-align:center;
-  padding:25px 12px 10px;
+
+  padding:25px 10px 12px;
 
   animation:entrada .7s ease .4s both;
 }
@@ -176,20 +175,21 @@ main{
 .welcome h2{
   margin:0;
 
-  font-size:clamp(24px,6vw,32px);
+  font-size:clamp(25px,6vw,33px);
 
   font-weight:900;
 
   background:
     linear-gradient(
       90deg,
-      #fff,
+      #ffffff,
       #c4b5fd,
       #67e8f9
     );
 
   -webkit-background-clip:text;
   background-clip:text;
+
   color:transparent;
 }
 
@@ -207,7 +207,7 @@ main{
 ========================= */
 
 .location-box{
-  margin:15px 0 20px;
+  margin:12px 0 20px;
 
   animation:entrada .7s ease .5s both;
 }
@@ -218,7 +218,7 @@ main{
   border:0;
   border-radius:18px;
 
-  padding:17px 18px;
+  padding:17px 16px;
 
   color:white;
 
@@ -241,13 +241,6 @@ main{
   transition:
     transform .2s ease,
     box-shadow .2s ease;
-}
-
-.location-btn:hover{
-  transform:translateY(-2px);
-
-  box-shadow:
-    0 14px 32px rgba(99,102,241,.40);
 }
 
 .location-btn:active{
@@ -320,10 +313,6 @@ main{
 
   box-shadow:
     0 8px 25px rgba(0,0,0,.15);
-
-  transition:
-    border .2s ease,
-    box-shadow .2s ease;
 }
 
 #search::placeholder{
@@ -387,7 +376,7 @@ main{
 
   border-radius:21px;
 
-  padding:19px;
+  padding:18px;
 
   box-shadow:
     0 10px 30px rgba(0,0,0,.18);
@@ -413,4 +402,51 @@ main{
 
   border-radius:50%;
 
-  background:#8b5
+  background:#8b5cf6;
+
+  opacity:.08;
+}
+
+.card.hidden{
+  display:none;
+}
+
+.card-top{
+  position:relative;
+  z-index:1;
+
+  display:flex;
+
+  align-items:flex-start;
+
+  gap:12px;
+}
+
+.pin{
+  flex:none;
+
+  width:40px;
+  height:40px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:13px;
+
+  background:rgba(139,92,246,.15);
+
+  font-size:20px;
+}
+
+.name{
+  font-weight:900;
+  font-size:18px;
+
+  margin-bottom:5px;
+}
+
+.address{
+  color:var(--muted);
+
+ 
