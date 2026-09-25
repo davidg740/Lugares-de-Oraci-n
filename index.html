@@ -115,8 +115,80 @@ main{
 .intro{
   text-align:center;
   color:var(--muted);
-  margin:26px 8px 20px;
+  margin:26px 8px 14px;
   font-size:16px;
+}
+
+.location-box{
+  margin:0 0 20px;
+  text-align:center;
+}
+
+.location-btn{
+  width:100%;
+  border:0;
+  cursor:pointer;
+  color:#fff;
+  background:linear-gradient(135deg,#0ea5e9,#2563eb);
+  font-family:inherit;
+  font-size:16px;
+  font-weight:800;
+  padding:15px 18px;
+  border-radius:15px;
+  box-shadow:0 8px 22px rgba(37,99,235,.25);
+}
+
+.location-btn:active{
+  transform:scale(.98);
+}
+
+.location-status{
+  margin:10px 5px 0;
+  color:#a5b4fc;
+  font-size:13px;
+  line-height:1.4;
+  min-height:18px;
+}
+
+.search-box{
+  margin-bottom:18px;
+}
+
+.search-input{
+  width:100%;
+  border:1px solid rgba(255,255,255,.12);
+  outline:none;
+  border-radius:15px;
+  padding:15px 17px;
+  background:rgba(16,28,46,.92);
+  color:#fff;
+  font-family:inherit;
+  font-size:16px;
+  box-shadow:0 8px 25px rgba(0,0,0,.15);
+}
+
+.search-input::placeholder{
+  color:#8190a6;
+}
+
+.search-input:focus{
+  border-color:rgba(139,92,246,.8);
+}
+
+.callout{
+  text-align:center;
+  margin:0 0 18px;
+  padding:15px 16px;
+  border-radius:17px;
+  background:linear-gradient(
+    135deg,
+    rgba(139,92,246,.18),
+    rgba(34,211,238,.10)
+  );
+  border:1px solid rgba(255,255,255,.10);
+  color:#e0e7ff;
+  font-weight:700;
+  font-size:15px;
 }
 
 .churches{
@@ -134,6 +206,10 @@ main{
   justify-content:space-between;
   gap:16px;
   box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.card.hidden{
+  display:none;
 }
 
 .name{
@@ -163,6 +239,18 @@ main{
 
 .btn:active{
   transform:scale(.98);
+}
+
+.no-results{
+  display:none;
+  text-align:center;
+  color:var(--muted);
+  padding:20px 10px;
+  font-size:15px;
+}
+
+.no-results.show{
+  display:block;
 }
 
 footer{
@@ -202,137 +290,4 @@ footer{
 
 <img
   class="logo"
-  src="https://iglesiadediosregionceasur.com/gallery_gen/a86eb129d8f73ec0300081f39f6a8e60_1752x640_fit.png?ts=1773094219"
-  alt="Iglesia de Dios Región CEA Sur">
-
-<h1>
-IGLESIA DE DIOS
-</h1>
-
-<p class="slogan">
-Elevando nuestras voces
-</p>
-
-<p class="message">
-Un mismo mensaje, una misma fe, una misma esperanza.
-</p>
-
-</section>
-
-<p class="intro">
-Encontrá la congregación más cercana y acercate.
-</p>
-
-<section class="churches" aria-label="Congregaciones">
-
-
-<!-- IGLESIA PUERTO -->
-
-<article class="card">
-
-<div>
-<div class="name">
-Iglesia de Dios, Puerto
-</div>
-
-<div class="address">
-San Salvador 3735
-</div>
-</div>
-
-<a
-class="btn"
-href="https://www.google.com/maps/search/?api=1&query=San%20Salvador%203745%2C%20Mar%20del%20Plata"
-target="_blank"
-rel="noopener">
-Cómo llegar
-</a>
-
-</article>
-
-
-<!-- IGLESIA VOM -->
-
-<article class="card">
-
-<div>
-<div class="name">
-Iglesia de Dios, VOM
-</div>
-
-<div class="address">
-Calabria 4946
-</div>
-</div>
-
-<a
-class="btn"
-href="https://www.google.com/maps/search/?api=1&query=Calabria%204946%2C%20Mar%20del%20Plata"
-target="_blank"
-rel="noopener">
-Cómo llegar
-</a>
-
-</article>
-
-
-<!-- IGLESIA EL SHADDAI -->
-
-<article class="card">
-
-<div>
-<div class="name">
-Iglesia de Dios, El Shaddai
-</div>
-
-<div class="address">
-Av. Jara 2980
-</div>
-</div>
-
-<a
-class="btn"
-href="https://www.google.com/maps/search/?api=1&query=Av.%20Jara%202980%2C%20Mar%20del%20Plata"
-target="_blank"
-rel="noopener">
-Cómo llegar
-</a>
-
-</article>
-
-
-<!-- IGLESIA BATÁN -->
-
-<article class="card">
-
-<div>
-<div class="name">
-Iglesia de Dios, Batán
-</div>
-
-<div class="address">
-Diagonal MDP, entre 31 y 33
-</div>
-</div>
-
-<a
-class="btn"
-href="https://maps.app.goo.gl/p6ixHgTi2i4ZFJ8P9?g_st=ac"
-target="_blank"
-rel="noopener">
-Cómo llegar
-</a>
-
-</article>
-
-
-</section>
-
-<footer>
-IGLESIA DE DIOS · Elevando nuestras voces
-</footer>
-
-</main>
-
-</body>
-</html>
+  src="https://iglesiadediosregionceasur.com/gallery_gen/a86eb129d8f73ec0300081
